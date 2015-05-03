@@ -1,0 +1,6 @@
+<noteDTO>
+<id>1</id>
+<body>Don't forget the milk!</body>
+</noteDTO>
+
+{"body":"Don't forget the milk!","id":"1"}
