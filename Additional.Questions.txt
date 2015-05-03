@@ -1,0 +1,17 @@
+Q. How well does your note-searching-api scale or not scale? How would you make your search more efficient?
+A. Currently the API stores the data in a HashMap since it was the easiest to implement for the purpose.
+   To scale it with more data, we could add a data store such as MongoDB whcih would be easier to setup and scale.
+
+Q. How would you add security to your API?
+A. One way of providing security on the Server side would be by injecting a JAX-RS SecurityContext using the @Context annotation.
+   We can also secure specific resources with authorization either by specifying them in the web.xml or using security annotations.
+
+   Client side security can be accomplished using the OAuth Authorization specification.
+
+Q. What features should we add to this API next?
+A. We could add additional features such as updating and deleting a note. Authentication as discussed in the previous
+   question would also be a welcome addition. Also nice would be to include ways to handle errors gracefully than spit
+   out compiler stack trace.
+
+Q. How would you test the API?
+A. Using the Jersey Test Framework. I have added some tests along with the implementation.
